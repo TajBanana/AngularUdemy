@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ServerComponent implements OnInit {
 
   serverId: number = 1010;
-  serverStatus: string = 'ONLINE';
+  serverStatus: string = '';
 
   constructor() {
     this.serverStatus = Math.random() > 0.5 ? 'online' : 'offline';
