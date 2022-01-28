@@ -11,3 +11,8 @@
     </div>
   </div>
 </div>
+
+<button class="btn btn-primary" type="button" (click)=onDisplayDetails()>Display details</button>
+<p>{{ displayOn }}</p>
+<p *ngIf="displayOn">Password: 12345</p>
+<p *ngFor="let c of countArray" [ngClass]="{count5 : c > 4}"> {{c}}</p>
